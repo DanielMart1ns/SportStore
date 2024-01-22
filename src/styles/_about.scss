@@ -1,0 +1,35 @@
+.about{
+    padding: 2vw 5.6vw;
+
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+
+        @media (max-width: 768px){
+            display: block;
+        }
+
+        &__image{
+            img{
+                max-width: 100%;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 768px){
+                margin-top: 20px;
+            }
+        }
+
+        &__text{
+            h2{
+                background-image: linear-gradient(to right, #7ab2fd, transparent);
+                padding: 8px;
+                margin-bottom: 10px;
+                border-bottom-left-radius: 8px;
+                border-top-left-radius: 20px;
+            }
+        }
+    }
+}

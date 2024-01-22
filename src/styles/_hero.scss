@@ -1,0 +1,122 @@
+@use 'variaveis';
+
+.hero{
+    background-image: url(../../dist/images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 94vh;
+    margin-top: -92px;
+
+    @media (max-width: 860px) {
+        min-height: 50vw;
+    }
+
+    &__content{
+        min-height: 92vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        @media (max-width: 860px) {
+            min-height: 100px;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        &__branding{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-left: 100px;
+            padding-top: 20px;
+            
+            img{
+                max-width: 220px;
+                width: 100%;
+
+                @media (max-width: 768px) {
+                    max-width: 180px;
+                }
+
+                @media (max-width: 650px) {
+                    max-width: 100px;
+                }
+            }
+        }
+
+        &__access{
+            padding-bottom: 50px;
+            text-align: center;
+
+            @media (max-width: 860px) {
+                padding-bottom: 0;
+                padding-left: 100px;
+                display: flex;
+                justify-content: center;
+                width: 300px;
+            }
+
+            &__button{
+                max-width: 160px;
+                width: 100%;
+                height: 44px;
+                border-radius: 4px;
+                font-size: 0.9em;
+                text-transform: uppercase;
+                font-family: Nunito, sans-serif;
+                font-weight: 600;
+                cursor: pointer;
+
+                @media (max-width: 860px) {
+                    max-width: 120px;
+                    margin-right: 6px;
+                }
+
+                @media (max-width: 768px) {
+                    max-width: 120px;
+                    height: 36px;
+                    font-size: 0.8em;
+                }
+
+                @media (max-width: 650px) {
+                    max-width: 90px;
+                    font-size: 0.7em;
+                }
+
+                &--is-singup{
+                    border: 1px solid variaveis.$corDeFundoBotaoCadastro;
+                    background-color: variaveis.$corDeFundoBotaoCadastro;
+                    color: #fff;
+                    transition: .3s;
+
+                    &:hover{
+                        background-color: lighten(variaveis.$corDeFundoBotaoCadastro,3%);
+                        border-bottom-left-radius: 8px;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 20px;
+                        transition: .3s;
+                    }
+                }
+
+                &--is-login{
+                    border: 2px solid #c0c0c0;
+                    background-color: #000000e4;
+                    color: #fff;
+                    transition: .3s;
+
+                    &:hover{
+                        background-color: #fff;
+                        color: #000;
+                        border-bottom-left-radius: 8px;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 20px;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dist/images/logo.png" type="image/x-icon">
+    <title>Sports Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style/main.css">
+</head>
+<body>
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="dist/images/logo_branco.png" alt="Sports Store">
+            </h1>
+            <nav class="header__container__buttons">
+                <button class="header__container__buttons__button header__container__buttons__button--is-singup">Criar Conta</button>
+                <button class="header__container__buttons__button header__container__buttons__button--is-login">Entrar</button>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="dist/images/logo.png" alt="Logo Sports Store">
+            </div>
+            <div class="hero__content__access">
+                <button class="button hero__content__access__button hero__content__access__button--is-singup">Criar Conta</button>
+                <button class="button hero__content__access__button hero__content__access__button--is-login">Entrar</button>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <nav class="products__tabs">
+            <button data-tab-button='marcas' class="products__tabs__button products__tabs__button--is-active">Marcas</button>
+            <button data-tab-button="vestuarioAcessorios" class="products__tabs__button">Vestuário & Acessórios</button>
+            
+        </nav>
+        <ul data-tab-id="marcas" class="products__list products__list--is-active">
+            <li class="products__list__item">
+                <img src="dist/images/nike.jpg" alt="nike">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/adidas-311450_1920.png" alt="adidas">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/vans.jpg" alt="vans">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/puma.jpg" alt="puma">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/real-madrid.jpg" alt="real-madrid">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/barcelona-645107_1280.jpg" alt="barcelona">
+            </li>
+        </ul>
+        <ul data-tab-id="vestuarioAcessorios" class="products__list">
+            <li class="products__list__item">
+                <img src="dist/images/relogio.jpg" alt="relogio">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/oculos_de_sol.jpg" alt="oculos">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/bone.jpg" alt="bone">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/fone_de_ouvido.png" alt="fone de ouvido">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/camisa.jpg" alt="camisa">
+            </li>
+            <li class="products__list__item">
+                <img src="dist/images/tenis.jpg" alt="tenis">
+            </li>
+        </ul>
+    </section>
+
+    <section class="about">
+        <div class="about__content">
+            <div class="about__content__image">
+                <img src="dist/images/loja.jpg" alt="interior da loja">
+            </div>
+            <div class="about__content__text">
+                <h2>Sobre a Sports Store</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos reprehenderit iure eligendi reiciendis ratione neque veniam est, quis unde similique rem molestiae placeat expedita voluptate tempora ex dolore nostrum repudiandae quisquam consequuntur ipsa voluptates officiis possimus! Aliquam adipisci delectus molestiae quaerat totam rerum nisi expedita dicta. Odio, eligendi dignissimos quibusdam harum quasi consequatur quidem, eum unde ipsam illo commodi et!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="plans">
+        <div class="plans__content">
+            <h2>Escolha o seu plano</h2>
+            <ul class="plans__content__list">
+                <li class="plans__content__list__item">
+                    <img src="dist/images/plano_academia.png" alt="plano de academia">
+                    <strong>R$ 20,00</strong>
+                    <p>
+                        Acesso a nossa rede de academias em todo o país, com acompanhamento profissonal.
+                    </p>
+                    <button class="button plans__content__list__item__button">
+                        Assinar
+                    </button>
+                </li>
+                <li class="plans__content__list__item">
+                    <img src="dist/images/desconto.png" alt="40% de desconto em nossas lojas">
+                    <strong>Cadastre-se</strong>
+                    <p>
+                        Receba até 40% de desconto em nossas lojas com o cadastro de fidelidade.
+                    </p>
+                    <button class="button plans__content__list__item__button">
+                        Cadastrar
+                    </button>
+                </li>
+                <li class="plans__content__list__item">
+                    <img src="dist/images/plano_natacao.png" alt="40% de desconto em nossas lojas">
+                    <strong>R$ 50,00</strong>
+                    <p>
+                        Acesso aos nossos espaços de para atividade física e lazer, com aulas em diversas modalidades esportivas.
+                    </p>
+                    <button class="button plans__content__list__item__button">
+                        Assinar
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <img src="dist/images/logo.png" alt="Sports Store">
+            <ul class="footer__content__list">
+                <li class="footer__content__list__item">
+                    <a href="#">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__content__list__item">
+                    <a href="#">Política de privacidade</a>
+                </li>
+                <li class="footer__content__list__item">
+                    <a href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__content__list__item">
+                    <a href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__content__list__item">
+                    <a href="#">Ajuda</a>
+                </li>
+                <li class="footer__content__list__item">
+                    <a href="#">Sobre a Sports Store</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2024 Sports Store e Sports Store Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                Sports Store é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Sports Store é comercializado por Sports Store Company (Brasil) Ltda. xxxx xxxx xxxxx, Av. Das xxxxx xxxx, 11.111, 00.000, 22.222, Piso 3, São Paulo/SP – CEP 0000-999, Brasil e CNPJ/M
+            </p>
+        </div>
+    </footer>
+
+    <script src="dist/scripts/main.js"></script>
+</body>
+</html>
